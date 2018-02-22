@@ -9,12 +9,12 @@
 #include <xc.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <llvd.h>
+//#include <llvd.h>
 
 #define rs LATA6
 #define rw LATA7
 #define en LATE2
-#define lcd_port LATD
+#define lcd_port LATE
 
 
 
@@ -85,17 +85,18 @@ void lcd_init(){
 
 void main(void) {
     
-    //Making Port E as output port
+    //Making Port E and A as output port
     TRISE = 0x00;
+    TRISA = 0x00;
     
     //Making bit 6 of port A as output
-    TRISA6 = 0;
+//    TRISA6 = 0;
     
     //Making bit 7 of port A as output
-    TRISA7 = 0;
+  //  TRISA7 = 0;
     
     //Making bit 2 of port E as output
-    TRISE2 = 0;
+  //  TRISE2 = 0;
     
     
     // Initializing LCD
