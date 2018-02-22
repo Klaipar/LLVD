@@ -85,6 +85,9 @@ void lcd_init(){
 
 void main(void) {
     
+    //Making Port E as output port
+    TRISE = 0x00;
+    
     //Making bit 6 of port A as output
     TRISA6 = 0;
     
