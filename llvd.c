@@ -9,7 +9,7 @@
 #include <xc.h>
 #include <stdio.h>
 #include <stdlib.h>
-//#include <llvd.h>
+#include <llvd.h>
 
 #define rs LATA6
 #define rw LATA7
