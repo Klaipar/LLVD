@@ -7,6 +7,7 @@
 
 
 #include <xc.h>
+#include <lcd.h>
 
 
 #define _XTAL_FREQ 3400000
@@ -95,11 +96,8 @@ void main()
     {
       Lcd_Clear();
       Lcd_Set_Cursor(1,1);
-      Lcd_Write_String("Out of Range");
+      Lcd_Write_String("Distance Out of Range");
     }
     __delay_ms(400);
   }
 }
-
-
-
