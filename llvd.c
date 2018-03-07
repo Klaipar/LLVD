@@ -86,18 +86,20 @@ void lcd_init(){
 
 void main(void) {
     
-    //Making Port E and A as output port
-    TRISE = 0x00;
-    TRISA = 0x00;
+    // LCD interfacing 
+     
+    TRISA0 = 0;   // DB4
+    TRISA1 = 0;   // DB5
+    TRISA2 = 0;   // DB6
+    TRISA3 = 0;   // DB7
+    TRISA4 = 0;   // EN  
+    TRISA6 = 0;   // RS
+    TRISA7 = 0;   // R/W
     
-    //Making bit 6 of port A as output
-//    TRISA6 = 0;
+    // HCSR04 interfacing
     
-    //Making bit 7 of port A as output
-  //  TRISA7 = 0;
-    
-    //Making bit 2 of port E as output
-  //  TRISE2 = 0;
+    TRISE0 = 0;   // TRIG
+    TRISE1 = 1;   // ECHO
     
     
     // Initializing LCD
