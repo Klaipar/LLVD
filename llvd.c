@@ -9,13 +9,13 @@
 #include <xc.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <llvd.h>
+//#include "llvd.h"
 
 
 #define rs LATA6
 #define rw LATA7
-#define en LATE2
-#define lcd_port LATE
+#define en LATA4
+#define lcd_port LATA
 
 
 

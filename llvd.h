@@ -9,6 +9,9 @@
 
 
 
+#ifndef XC_HEADER_TEMPLATE_H
+#define	XC_HEADER_TEMPLATE_H
+
 #include <xc.h>
 
 // CONFIG1
@@ -53,3 +56,6 @@
 
 // Setting of our oscilator
 #define _XTAL_FREQ 3400000
+
+
+#endif	/* XC_HEADER_TEMPLATE_H */

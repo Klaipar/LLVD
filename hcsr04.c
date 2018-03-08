@@ -4,7 +4,7 @@
  *
  * Created on February 23, 2018, 1:49 PM
  */
-
+/*
 
 #include <xc.h>
 #include <lcd.h>
@@ -37,7 +37,7 @@ void main()
   int a;
 
   TRISA = 0b00010000;           //RA3 as Input PIN (ECHO)
-  TRISE = 0x00; // LCD Pins A (TRISA) and E as Output
+  TRISE = 0x00; // LCD Pins 
 
   Lcd_Init();
 
@@ -101,3 +101,4 @@ void main()
     __delay_ms(400);
   }
 }
+*/
